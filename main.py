@@ -2,8 +2,8 @@ from pyray import *
 import random
 import math
 
-nu = 30
-nx,ny = 20,20
+nu = 50
+nx,ny = 10,10
 
 brush_rad = 20
 
@@ -17,9 +17,9 @@ def draw_points():
     for i,p in enumerate(points):
         x = (i%nx)*nu + nu//2
         y = (i//nx)*nu + nu//2
-        r = 1
+        r = 4
         draw_circle(x,y,r, WHITE if p==1 else BLACK )
-        #draw_circle_lines(x,y,r,GRAY)
+        draw_circle_lines(x,y,r,GRAY)
 
 def mouse_brush():
 
