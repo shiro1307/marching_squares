@@ -1,0 +1,1 @@
+str(points[bi+1])
